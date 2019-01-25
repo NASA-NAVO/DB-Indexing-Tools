@@ -1,9 +1,12 @@
 LIB_DIR = lib
 
-all:				libs spatial_index
+all:				libs apps spatial_index
 
 libs:
 					(cd lib; make; make install)
+
+apps:
+					(cd src; make; make install)
 
 spatial_index:	setup.py spatial_index.pyx
 					python setup.py bdist_wheel
