@@ -1,5 +1,5 @@
 CC      =	gcc
-CFLAGS  =	-m64 -g -c -I../include -std=gnu99
+CFLAGS  =	-fPIC -m64 -g -c -I../include -std=gnu99
 LIBNAME =	libhtm.a
 
 SRCS =	common.c     \

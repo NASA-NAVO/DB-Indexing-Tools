@@ -4,7 +4,7 @@ libhtm:
 				(cd tinyhtm/src; make)
 
 sptQueryLib.o:	sptQueryLib.c
-				gcc -m64 -c -Wall -I. -Itinyhtm/include sptQueryLib.c
+				gcc -fPIC -m64 -c -Wall -I. -Itinyhtm/include sptQueryLib.c
 
 install:
 				install sptQueryLib.o ../objs
